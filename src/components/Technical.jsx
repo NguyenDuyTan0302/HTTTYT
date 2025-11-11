@@ -14,9 +14,6 @@ const Technical = () => {
         <p className="text-gray-700">Nữ</p>
         <p className="text-gray-700">Mã bệnh nhân: BN001</p>
 
-        <button className="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-          Hiển thị thêm
-        </button>
       </div>
 
       {/* 🩶 Thẻ 2: Input nhập tên thuốc */}
