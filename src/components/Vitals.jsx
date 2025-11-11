@@ -13,23 +13,56 @@ const Vitals = () => {
         <h2 className="text-xl font-semibold mb-2">Giang Mỹ Tiên</h2>
         <p className="text-gray-700">Nữ</p>
         <p className="text-gray-700">Mã bệnh nhân: BN001</p>
-
-        <button className="mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
-          Hiển thị thêm
-        </button>
       </div>
 
       {/* Thẻ 2: Sinh hiệu */}
-      <div className="bg-white rounded-2xl shadow p-5 w-full">
-        <h3 className="text-lg font-semibold mb-3 text-gray-800">Sinh hiệu</h3>
+      <div className="bg-white rounded-2xl shadow p-5">
+        <h2 className="text-lg font-bold text-slate-800 mb-3">Nhập chỉ số sinh hiệu</h2>
 
-        <div className="space-y-1 text-gray-700">
-          <p><strong>Nhiệt độ (°C):</strong> 37</p>
-          <p><strong>Huyết áp (mmHg):</strong> 115</p>
-          <p><strong>Chiều cao (cm):</strong> 160</p>
-          <p><strong>Cân nặng (kg):</strong> 48</p>
+        <div className="space-y-3">
+          <div className="flex items-center">
+            <label className="w-40 font-medium text-gray-700">Nhiệt đô(Độ C)</label>
+            <input
+              type="text"
+              placeholder="Nhập"
+              className="flex-1 bg-gray-100 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <div className="flex items-center">
+            <label className="w-40 font-medium text-gray-700">Huyết áp (mmHg)</label>
+            <input
+              type="text"
+              placeholder="Nhập"
+              className="flex-1 bg-gray-100 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <div className="flex items-center">
+            <label className="w-40 font-medium text-gray-700">Chiều cao(Cm)</label>
+            <input
+              type="text"
+              placeholder="Nhập"
+              className="flex-1 bg-gray-100 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <div className="flex items-center">
+            <label className="w-40 font-medium text-gray-700">Cân nặng(Kg)</label>
+            <input
+              type="text"
+              placeholder="Nhập"
+              className="flex-1 bg-gray-100 rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+
+          <div className="flex justify-end mt-6">
+          <button className="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+            Nhập
+          </button>
         </div>
-      </div>
+        </div>
+        </div>
     </div>
   );
 };
